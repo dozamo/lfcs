@@ -36,4 +36,4 @@ Here is a curated collection of links, tools, and sites that are extremely usefu
 <!--
 *   [Linux Foundation Forum](https://...link...)
 -->
-* [Reddit - r\/linuxadmin](https://www.reddit.com/r/linuxadmin/)
+* [Reddit - r/linuxadmin](https://www.reddit.com/r/linuxadmin/)
