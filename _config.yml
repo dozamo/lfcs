@@ -1,0 +1,10 @@
+# El "cerebro" de tu sitio de documentación
+title: Mi Guía de Estudio LFCS
+description: Apuntes y guías para la certificación LFCS.
+
+# --- La línea mágica ---
+# Esto le dice a GitHub Pages que use el tema "Just the Docs"
+remote_theme: just-the-docs/just-the-docs
+
+# Opcional: añade un esquema de color. Prueba 'dark' o déjalo comentado.
+color_scheme: dark
