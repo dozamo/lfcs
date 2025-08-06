@@ -9,6 +9,8 @@ remote_theme: just-the-docs/just-the-docs@v0.10.1
 # Opcional: añade un esquema de color. Prueba 'dark' o déjalo comentado.
 color_scheme: dark
 
+# Forcing a rebuild
 # Para abrir enlaces externos en una nueva pestaña
 links:
     external: true
+    external_links: true
