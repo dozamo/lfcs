@@ -5,7 +5,7 @@ title: Welcome
 
 # My Personal LFCS Study Guide
 
-Welcome! This site serves as my personal, evolving knowledge base for the **Linux Foundation Certified Sysadmin (LFCS)** certification. It's a collection of notes, commands, and key concepts organized to aid in my studies and, hopefully, to help others on a similar path.
+Welcome! This site serves as my personal, evolving knowledge base for the **[Linux Foundation Certified Sysadmin (LFCS)](https://training.linuxfoundation.org/certification/linux-foundation-certified-sysadmin-lfcs/#exams)** certification. It's a collection of notes, commands, and key concepts organized to aid in my studies and, hopefully, to help others on a similar path.
 
 The content is a work in progress, compiled from various resources and my own hands-on practice.
 
