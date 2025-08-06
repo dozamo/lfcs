@@ -33,10 +33,7 @@ Here is a curated collection of links, tools, and sites that are extremely usefu
 
 ## Online Communities
 *Places to ask questions and learn from others.*
-<!--
 
-*   [Linux Foundation Forum]()
-
--->
+<!-- * [Linux Foundation Forum]() -->
 
 * [Reddit - r/linuxadmin](https://www.reddit.com/r/linuxadmin/)
