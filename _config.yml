@@ -11,6 +11,6 @@ color_scheme: dark
 
 # Forcing a rebuild
 # Para abrir enlaces externos en una nueva pestaña
-links:
+  links:
     external: true
     external_links: true
