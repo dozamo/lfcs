@@ -1,5 +1,5 @@
 # El "cerebro" de tu sitio de documentación
-title: My LFCS Study Guide 
+title: LFCS Notes
 description: Notes and guides for LFCS certification.
 
 # --- La línea mágica ---
@@ -9,3 +9,6 @@ remote_theme: just-the-docs/just-the-docs
 # Opcional: añade un esquema de color. Prueba 'dark' o déjalo comentado.
 color_scheme: dark
 
+# Para abrir enlaces externos en una nueva pestaña
+links:
+  external: true
