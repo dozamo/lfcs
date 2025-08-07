@@ -1,0 +1,7 @@
+/* assets/css/custom.css */
+
+.main-content {
+  max-width: none; /* Elimina el ancho máximo del contenedor */
+  padding-left: 4rem; /* Añade un poco de espacio a los lados */
+  padding-right: 4rem; /* para que el texto no toque los bordes */
+}
