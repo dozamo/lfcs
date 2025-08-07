@@ -1,0 +1,21 @@
+<!-- _includes/footer_custom.html -->
+
+<script>
+// Espera a que todo el contenido de la página esté cargado
+document.addEventListener('DOMContentLoaded', function() {
+  // Obtiene todos los enlaces (etiquetas <a>) de la página
+  const links = document.querySelectorAll('a');
+  // Obtiene el nombre del host de tu sitio (ej: "dozamo.github.io")
+  const currentHost = window.location.hostname;
+
+  // Recorre cada uno de los enlaces encontrados
+  links.forEach(link => {
+    // Comprueba si el enlace tiene un 'hostname' y si es DIFERENTE al de tu sitio
+    if (link.hostname !== currentHost && link.hostname !== '') {
+      // Si es un enlace externo, añade los atributos necesarios
+      link.setAttribute('target', '_blank');
+      link.setAttribute('rel', 'noopener noreferrer');
+    }
+  });
+});
+</script>
