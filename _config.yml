@@ -1,27 +1,9 @@
-# El "cerebro" de tu sitio de documentación
 title: LFCS Notes
 description: Notes and guides for LFCS certification.
 
-# --- La línea mágica ---
-# Esto le dice a GitHub Pages que use el tema "Just the Docs"
-remote_theme: just-the-docs/just-the-docs@v0.10.1
+remote_theme: just-the-docs/just-the-docs
 
-# Opcional: añade un esquema de color. Prueba 'dark' o déjalo comentado.
 color_scheme: dark
 
-# Forcing a rebuild
-# Para abrir enlaces externos en una nueva pestaña
-links:
-    external: true
-      #    external_links: true
-
-# Asegúrate de que el plugin del tema remoto esté explícitamente listado.
-# Esto a veces soluciona problemas de carga de archivos de tema.
-plugins:
-  - jekyll-remote-theme
-
-# Y ahora, el script que queríamos desde el principio.
-# Lo ponemos directamente aquí, ya no necesitamos archivos externos.
-footer_content: "<script>document.addEventListener('DOMContentLoaded',function(){console.log('[DEBUG] Custom link script started from footer_content.');const links=document.querySelectorAll('a');const currentHost=window.location.hostname;links.forEach(link=>{if(link.hostname!==currentHost&&link.hostname!==''){link.setAttribute('target','_blank');link.setAttribute('rel','noopener noreferrer');}});console.log('[DEBUG] Custom link script finished.');});</script>"
-
+# --- La única configuración de prueba ---
 page_navigation: true
