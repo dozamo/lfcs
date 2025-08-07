@@ -2,12 +2,13 @@
 
 main:
   - title: "Welcome"
-    url: /lfcs/
+    url: /
   - title: "Lab Environment Setup"
+    url: /lab-setup/ # La página padre también debe tener una URL
     children:
       - title: "Provisioning CentOS"
-        url: /lfcs/provision-centos-kvm.html
+        url: /provision-centos-kvm/
       - title: "Provisioning Ubuntu"
-        url: /lfcs/provision-ubuntu-kvm.html
+        url: /provision-ubuntu-kvm/
   - title: "Useful Resources"
-    url: /lfcs/resources.html
+    url: /resources/

@@ -1,5 +1,6 @@
 ---
 title: Welcome to LFCS Notes
+permalink: /
 ---
 
 # My Personal LFCS Study Guide

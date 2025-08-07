@@ -1,6 +1,6 @@
 ---
 title: Lab Environment Setup
-name: lab-environment-setup
+permalink: /lab-setup/
 ---
 
 # Lab Environment Setup

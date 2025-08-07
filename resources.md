@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Useful Resources
-nav_order: 999
+permalink: /resources/
 ---
 
 # Resource Hub
