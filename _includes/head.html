@@ -1,0 +1,30 @@
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <link rel="stylesheet" href="{{ '/assets/css/just-the-docs.css' | relative_url }}">
+
+  {% if site.ga_tracking != nil %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga_tracking }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', '{{ site.ga_tracking }}'{% if site.ga_tracking_anonymize_ip %}, { 'anonymize_ip': true }{% endif %});
+    </script>
+  {% endif %}
+
+  {% if site.search_enabled != false %}
+    <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>
+  {% endif %}
+
+  <script src="{{ '/assets/js/just-the-docs.js' | relative_url }}"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {% seo %}
+
+  {% include head_custom.html %}
+
+</head>
