@@ -1,9 +1,10 @@
 ---
-layout: default
+#layout: default
+layout: collection
 title: Lab Environment Setup
 nav_order: 2
 has_children: true
-#permalink: /lab-setup/
+permalink: /lab-setup/
 list_pages: false
 has_toc: false
 ---
@@ -11,8 +12,6 @@ has_toc: false
 # Lab Environment Setup
 
 This section details the process of setting up the virtual lab environment...
-
-
 
 ## Guides in this Section
 
