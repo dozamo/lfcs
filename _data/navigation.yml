@@ -1,12 +1,13 @@
-# main links
-main:
-  - title: "LFCS Notes - github"
-    url: https://github.com/dozamo/lfcs
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+test:
+  - title: "🏠 Inicio"
+    url: /lfcs/
+
+  - title: "Test 1"
+    url: /test/test1/
+
+  - title: "Test 2"
+    url: /test/test2/
+
+  - title: "Test 3"
+    url: /test/test3/
+
