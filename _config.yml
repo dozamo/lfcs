@@ -1,0 +1,54 @@
+# _config.yml - Final Configuration for LFCS Notes
+
+# --- Basic Site Settings ---
+title: "LFCS Notes"
+description: "A personal study guide for the LFCS certification."
+url: "https://dozamo.github.io"
+baseurl: "/lfcs"
+
+# --- Theme Selection ---
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "dark"
+
+# --- Plugins ---
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-include-cache
+  - jekyll-github-metadata
+
+# --- Collections (The core of our agile workflow) ---
+# Each domain is a collection. To add a note, just add a file to the folder.
+collections:
+  lab_setup:
+    output: true
+    permalink: /lab/:path/
+  essential_commands:
+    output: true
+    permalink: /essential-commands/:path/
+  users_groups:
+    output: true
+    permalink: /users-groups/:path/
+  networking:
+    output: true
+    permalink: /networking/:path/
+  storage:
+    output: true
+    permalink: /storage/:path/
+  operations_deployment:
+    output: true
+    permalink: /operations-deployment/:path/
+  bonus:
+    output: true
+    permalink: /bonus/:path/
+
+# --- Defaults for all content ---
+defaults:
+  - scope:
+      path: "" # Apply to all files
+    values:
+      layout: "single"
+      sidebar:
+        nav: "main" # All pages will use the main sidebar defined in navigation.yml
+      show_pagination: true # Enable previous/next links

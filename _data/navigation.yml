@@ -1,0 +1,58 @@
+# _data/navigation.yml - Main Sidebar Navigation
+
+main:
+  - title: "Welcome"
+    url: /
+
+  - title: "Lab Environment Setup"
+    children:
+      # This loop automatically lists all documents in the _lab_setup folder
+      {% for doc in site.lab_setup %}
+        - title: "{{ doc.title }}"
+          url: "{{ doc.url | relative_url }}"
+      {% endfor %}
+
+  - title: "Essential Commands (20%)"
+    children:
+      {% for doc in site.essential_commands %}
+        - title: "{{ doc.title }}"
+          url: "{{ doc.url | relative_url }}"
+      {% endfor %}
+
+  - title: "Users and Groups (10%)"
+    children:
+      {% for doc in site.users_groups %}
+        - title: "{{ doc.title }}"
+          url: "{{ doc.url | relative_url }}"
+      {% endfor %}
+
+  - title: "Networking (25%)"
+    children:
+      {% for doc in site.networking %}
+        - title: "{{ doc.title }}"
+          url: "{{ doc.url | relative_url }}"
+      {% endfor %}
+
+  - title: "Storage (20%)"
+    children:
+      {% for doc in site.storage %}
+        - title: "{{ doc.title }}"
+          url: "{{ doc.url | relative_url }}"
+      {% endfor %}
+
+  - title: "Operations & Deployment (25%)"
+    children:
+      {% for doc in site.operations_deployment %}
+        - title: "{{ doc.title }}"
+          url: "{{ doc.url | relative_url }}"
+      {% endfor %}
+
+  - title: "Bonus: Miscellanea"
+    children:
+      {% for doc in site.bonus %}
+        - title: "{{ doc.title }}"
+          url: "{{ doc.url | relative_url }}"
+      {% endfor %}
+
+  - title: "Useful Resources"
+    url: /resources/
