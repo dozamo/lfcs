@@ -3,19 +3,36 @@
 <script>
 // Espera a que todo el contenido de la página esté cargado
 document.addEventListener('DOMContentLoaded', function() {
+  
+  // LOG #1: Confirma que el script se ha iniciado
+  console.log('[DEBUG] Custom link script started.');
+
   // Obtiene todos los enlaces (etiquetas <a>) de la página
   const links = document.querySelectorAll('a');
+  // LOG #2: Muestra cuántos enlaces se han encontrado en la página
+  console.log(`[DEBUG] Found ${links.length} links on the page.`);
+
   // Obtiene el nombre del host de tu sitio (ej: "dozamo.github.io")
   const currentHost = window.location.hostname;
+  // LOG #3: Muestra cuál es el host actual del sitio
+  console.log(`[DEBUG] Current site host is: ${currentHost}`);
 
   // Recorre cada uno de los enlaces encontrados
   links.forEach(link => {
     // Comprueba si el enlace tiene un 'hostname' y si es DIFERENTE al de tu sitio
     if (link.hostname !== currentHost && link.hostname !== '') {
+      
+      // LOG #4: Se ejecuta CADA VEZ que encuentra un enlace externo
+      console.log(`[DEBUG] Modifying external link: ${link.href}`);
+      
       // Si es un enlace externo, añade los atributos necesarios
       link.setAttribute('target', '_blank');
       link.setAttribute('rel', 'noopener noreferrer');
     }
   });
+
+  // LOG #5: Confirma que el script ha terminado su trabajo
+  console.log('[DEBUG] Custom link script finished.');
+
 });
 </script>
