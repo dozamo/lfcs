@@ -35,3 +35,4 @@ defaults:
 # en la parte inferior de las páginas de contenido.
 paginator:
   enabled: true
+
