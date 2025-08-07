@@ -27,3 +27,11 @@ defaults:
       layout: "single" # El layout por defecto para una página de contenido
       sidebar:
         nav: "main" # Le dice que use la navegación definida en 'main' en el archivo de datos
+      show_pagination: true
+      show_title: false  # <-- ¡AQUÍ ESTÁ LA LÍNEA MÁGICA GLOBAL!
+
+# --- Configuración de la Lectura ---
+# Muestra los enlaces de paginación Anterior/Siguiente
+# en la parte inferior de las páginas de contenido.
+paginator:
+  enabled: true

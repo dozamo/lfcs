@@ -9,15 +9,18 @@ This section details the process of setting up the virtual lab environment...
 
 ## Guides in this Section
 
-<div class="child-page-cards">
-{%- for page in site.pages -%}
-  {%- if page.parent == "Lab Environment Setup" -%}
-    <div class="child-card">
-      <h3><a href="{{ page.url | relative_url }}">{{ page.title }}</a></h3>
-      {%- if page.description -%}
-        <p>{{ page.description }}</p>
-      {%- endif -%}
-    </div>
-  {%- endif -%}
-{%- endfor -%}
+<div class="feature__row">
+{% for item in site.data.navigation.main %}
+  {% if item.title == "Lab Environment Setup" %}
+    {% for child in item.children %}
+      <div class="archive__item">
+        <h3 class="archive__item-title">
+          <a href="{{ child.url | relative_url }}" rel="permalink">{{ child.title }}</a>
+        </h3>
+        <!-- Para la descripción, tendrías que añadirla también en _data/navigation.yml -->
+        <!-- <p class="archive__item-excerpt">{{ child.description }}</p> -->
+      </div>
+    {% endfor %}
+  {% endif %}
+{% endfor %}
 </div>
