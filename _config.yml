@@ -52,3 +52,4 @@ defaults:
       sidebar:
         nav: "main" # All pages will use the main sidebar defined in navigation.yml
       show_pagination: true # Enable previous/next links
+
