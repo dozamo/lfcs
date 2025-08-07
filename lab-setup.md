@@ -5,6 +5,7 @@ nav_order: 2
 has_children: true
 #permalink: /lab-setup/
 list_pages: false
+has_toc: false
 ---
 
 # Lab Environment Setup

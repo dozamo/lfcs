@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Provisioning Ubuntu 22.04 LTS on KVM
+title: Provisioning Ubuntu 22.04 LTS 
 nav_order: 2
 parent: Lab Environment Setup
 #permalink: /lab-setup/ubuntu/ # Opcional, para una URL más bonita
