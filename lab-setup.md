@@ -1,26 +1,21 @@
 ---
-title: Lab Environment Setup
+title: "Lab Environment Setup"
 permalink: /lab-setup/
+# Añade esta sección de "feature_row"
+feature_row:
+  - title: "Provisioning CentOS"
+    url: /provision-centos-kvm/
+    excerpt: "A step-by-step guide to installing a CentOS Stream 8 VM using virt-install."
+    btn_label: "Read More"
+    btn_class: "btn--inverse"
+  - title: "Provisioning Ubuntu"
+    url: /provision-ubuntu-kvm/
+    excerpt: "Guide for an automated, text-based installation of an Ubuntu 22.04 LTS server."
+    btn_label: "Read More"
+    btn_class: "btn--inverse"
 ---
 
-# Lab Environment Setup
+<!-- El título "Lab Environment Setup" ya se muestra gracias al 'front matter'. -->
 
 This section details the process of setting up the virtual lab environment...
 
-## Guides in this Section
-
-<div class="feature__row">
-{% for item in site.data.navigation.main %}
-  {% if item.title == "Lab Environment Setup" %}
-    {% for child in item.children %}
-      <div class="archive__item">
-        <h3 class="archive__item-title">
-          <a href="{{ child.url | relative_url }}" rel="permalink">{{ child.title }}</a>
-        </h3>
-        <!-- Para la descripción, tendrías que añadirla también en _data/navigation.yml -->
-        <!-- <p class="archive__item-excerpt">{{ child.description }}</p> -->
-      </div>
-    {% endfor %}
-  {% endif %}
-{% endfor %}
-</div>

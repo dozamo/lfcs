@@ -1,7 +1,6 @@
 ---
 title: "Provisioning Ubuntu 22.04 LTS"
 description: "Guide for an automated, text-based installation of an Ubuntu 22.04 LTS server for our lab."
-permalink: /provision-ubuntu-kvm/
 ---
 
 # Provisioning an Ubuntu 22.04 LTS VM on KVM (CLI)

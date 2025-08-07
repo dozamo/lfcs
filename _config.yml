@@ -36,3 +36,7 @@ defaults:
 paginator:
   enabled: true
 
+collections:
+  lab:
+    output: true
+    permalink: /lab/:path/

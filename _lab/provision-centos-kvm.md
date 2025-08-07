@@ -1,7 +1,6 @@
 ---
 title: "Provisioning CentOS Stream 8"
 description: "A step-by-step guide to installing a CentOS Stream 8 VM using virt-install and KVM storage pools."
-permalink: /provision-centos-kvm/
 ---
 
 # Provisioning a CentOS Stream 8 VM on KVM (CLI)

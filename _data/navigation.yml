@@ -7,8 +7,8 @@ main:
     url: /lab-setup/ # La página padre también debe tener una URL
     children:
       - title: "Provisioning CentOS"
-        url: /provision-centos-kvm/
+        url: /lab/provision-centos-kvm/
       - title: "Provisioning Ubuntu"
-        url: /provision-ubuntu-kvm/
+        url: /lab/provision-ubuntu-kvm/
   - title: "Useful Resources"
     url: /resources/
