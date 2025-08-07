@@ -18,11 +18,11 @@ To align directly with the certification requirements, this guide is structured 
 
 The main domains covered are:
 
-*   **Operations & Deployment** (25%)
-*   **Networking** (25%)
-*   **Storage** (20%)
-*   **Essential Commands** (20%)
-*   **Users and Groups** (10%)
+* **Operations Deployment** (25%)
+* **Networking** (25%)
+* **Storage** (20%)
+* **Essential Commands** (20%)
+* **Users and Groups** (10%)
 
 Each section will contain detailed notes, practical examples, and configuration snippets relevant to that domain.
 
