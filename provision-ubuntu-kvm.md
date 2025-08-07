@@ -1,9 +1,5 @@
 ---
-layout: default
-title: Provisioning Ubuntu 22.04 LTS 
-nav_order: 2
-parent: Lab Environment Setup
-#permalink: /lab-setup/ubuntu/ # Opcional, para una URL más bonita
+title: "Provisioning Ubuntu 22.04 LTS"
 description: "Guide for an automated, text-based installation of an Ubuntu 22.04 LTS server for our lab."
 ---
 

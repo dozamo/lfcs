@@ -1,9 +1,5 @@
 ---
-layout: default
-title: Provisioning CentOS Stream 8
-parent: Lab Environment Setup
-nav_order: 1
-#permalink: /lab-setup/centos/ # Opcional, para una URL más bonita
+title: "Provisioning CentOS Stream 8"
 description: "A step-by-step guide to installing a CentOS Stream 8 VM using virt-install and KVM storage pools."
 ---
 

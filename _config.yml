@@ -1,9 +1,25 @@
-title: LFCS Notes
-description: Notes and guides for LFCS certification.
+# _config.yml - Configuración para Minimal Mistakes
 
-remote_theme: just-the-docs/just-the-docs@v0.7.0
+# --- Configuración Básica del Sitio ---
+title: "LFCS Notes"
+description: "Notes and guides for LFCS certification."
+url: "https://dozamo.github.io" # La URL base de tu sitio
+baseurl: "/lfcs" # El subdirectorio de tu proyecto
 
-color_scheme: dark
+# --- Selección del Tema ---
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "dark" # Opciones: "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "sunrise", "default"
 
-# --- La única configuración de prueba ---
-page_navigation: true
+# --- Navegación Principal (Sidebar) ---
+# Usaremos un archivo de datos para controlar esto
+# (ver Paso 2)
+
+# --- Defaults para todas las páginas ---
+defaults:
+  - scope:
+      path: "" # Aplicar a todos los archivos
+      type: "pages" # Solo a páginas, no a posts
+    values:
+      layout: "single" # El layout por defecto para una página de contenido
+      sidebar:
+        nav: "main" # Le dice que use la navegación definida en 'main' en el archivo de datos

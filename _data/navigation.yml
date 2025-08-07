@@ -1,0 +1,13 @@
+# _data/navigation.yml
+
+main:
+  - title: "Welcome"
+    url: /lfcs/
+  - title: "Lab Environment Setup"
+    children:
+      - title: "Provisioning CentOS"
+        url: /lfcs/provision-centos-kvm.html
+      - title: "Provisioning Ubuntu"
+        url: /lfcs/provision-ubuntu-kvm.html
+  - title: "Useful Resources"
+    url: /lfcs/resources.html

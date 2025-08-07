@@ -1,11 +1,6 @@
 ---
-layout: default
 title: Lab Environment Setup
-nav_order: 2
-has_children: true
-permalink: /lab-setup/
-list_pages: false
-has_toc: false
+name: lab-environment-setup
 ---
 
 # Lab Environment Setup

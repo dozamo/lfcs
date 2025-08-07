@@ -1,7 +1,5 @@
 ---
-layout: home
-title: Welcome
-nav_order: 1
+title: Welcome to LFCS Notes
 ---
 
 # My Personal LFCS Study Guide
