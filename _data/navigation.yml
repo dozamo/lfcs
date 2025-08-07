@@ -1,30 +1,38 @@
 # _data/navigation.yml
 
+# This defines the sidebar navigation
 docs_sidebar:
-  - title: "Getting Started"
+  - title: Getting Started
     children:
-      - title: "Welcome"
+      - title: Welcome
         url: /
-      - title: "Useful Resources"
+      - title: Useful Resources
         url: /resources/
 
-  - title: "Lab Environment Setup"
+  - title: Lab Environment Setup
     children:
-      # This loop automatically lists all documents in the _lab_setup folder
-      {% for doc in site.lab_setup %}
-        - title: "{{ doc.title }}"
-          url: "{{ doc.url | relative_url }}"
-      {% endfor %}
+      - title: Provisioning CentOS
+        url: /lab/01-provision-centos/
+      - title: Provisioning Ubuntu
+        url: /lab/02-provision-ubuntu/
 
-  - title: "LFCS Exam Domains"
+  - title: Essential Commands
     children:
-      - title: "Essential Commands (20%)"
-        # url: /essential-commands/ # Optional link for the parent
-      - title: "Users and Groups (10%)"
-        # url: /users-groups/
-      - title: "Networking (25%)"
-        # url: /networking/
-      - title: "Storage (20%)"
-        # url: /storage/
-      - title: "Operations & Deployment (25%)"
-        # url: /operations-deployment/
+      # Cuando crees notas en la carpeta _essential_commands, aparecerán aquí
+      # si sobreescribes este archivo con el método que te enseñaré después.
+      # Por ahora, lo dejamos vacío para que el build funcione.
+
+  - title: Users and Groups
+    children:
+
+  - title: Networking
+    children:
+
+  - title: Storage
+    children:
+
+  - title: Operations & Deployment
+    children:
+
+  - title: Bonus
+    children:
