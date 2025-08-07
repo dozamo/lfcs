@@ -1,0 +1,37 @@
+<!-- _includes/sidebar.html -->
+<nav class="greedy-nav">
+  <ul class="visible-links">
+    {% for link in site.data.navigation.main %}
+      <li class="masthead__menu-item">
+        <a href="{{ link.url | relative_url }}">{{ link.title }}</a>
+        {% if link.children %}
+          <ul>
+            {% for child in link.children %}
+              <li><a href="{{ child.url | relative_url }}">{{ child.title }}</a></li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+
+        <!-- AUTO-GENERATED LISTS FROM COLLECTIONS -->
+        {% if link.title == "Lab Environment Setup" %}
+          <ul>
+            {% for doc in site.lab_setup %}
+              <li><a href="{{ doc.url | relative_url }}">{{ doc.title }}</a></li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+
+        {% if link.title == "Essential Commands (20%)" %}
+          <ul>
+            {% for doc in site.essential_commands %}
+              <li><a href="{{ doc.url | relative_url }}">{{ doc.title }}</a></li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+
+        <!-- Repite el bloque 'if' para las otras colecciones: users_groups, networking, etc. -->
+
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

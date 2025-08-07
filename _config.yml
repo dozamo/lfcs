@@ -1,4 +1,4 @@
-# _config.yml - Final Configuration for LFCS Notes
+# _config.yml
 
 # --- Basic Site Settings ---
 title: "LFCS Notes"
@@ -6,7 +6,7 @@ description: "A personal study guide for the LFCS certification."
 url: "https://dozamo.github.io"
 baseurl: "/lfcs"
 
-# --- Theme Selection ---
+# --- Theme and Skin ---
 theme: minimal-mistakes-jekyll
 minimal_mistakes_skin: "dark"
 
@@ -18,8 +18,8 @@ plugins:
   - jekyll-include-cache
   - jekyll-github-metadata
 
-# --- Collections (The core of our agile workflow) ---
-# Each domain is a collection. To add a note, just add a file to the folder.
+# --- Collections ---
+# Defines our content sections. Each one corresponds to a folder.
 collections:
   lab_setup:
     output: true
@@ -43,13 +43,13 @@ collections:
     output: true
     permalink: /bonus/:path/
 
-# --- Defaults for all content ---
+# --- Defaults ---
+# Global settings for all pages to keep things DRY (Don't Repeat Yourself)
 defaults:
   - scope:
       path: "" # Apply to all files
     values:
-      layout: "single"
+      layout: "single" # Use the standard content layout
       sidebar:
-        nav: "main" # All pages will use the main sidebar defined in navigation.yml
-      show_pagination: true # Enable previous/next links
-
+        nav: "main" # All pages will use the main sidebar
+      show_pagination: true # Enable Previous/Next links for collection items
