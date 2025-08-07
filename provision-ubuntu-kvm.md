@@ -2,8 +2,7 @@
 layout: default
 title: Provisioning Ubuntu 22.04 LTS on KVM
 nav_order: 2
-# ¡YA NO NECESITAMOS LA LÍNEA 'parent'! Jekyll lo deduce por la carpeta.
-### parent: Lab Environment Setup
+parent: Lab Environment Setup
 #permalink: /lab-setup/ubuntu/ # Opcional, para una URL más bonita
 
 ---

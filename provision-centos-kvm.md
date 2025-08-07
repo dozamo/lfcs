@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Provisioning CentOS Stream 8
-# ¡YA NO NECESITAMOS LA LÍNEA 'parent'! Jekyll lo deduce por la carpeta.
-### parent: Lab Environment Setup
+parent: Lab Environment Setup
 nav_order: 1
 #permalink: /lab-setup/centos/ # Opcional, para una URL más bonita
 ---
