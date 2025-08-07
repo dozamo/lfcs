@@ -1,18 +1,22 @@
 # _config.yml - Configuración para Minimal Mistakes
 
-# --- Configuración Básica del Sitio ---
 title: "LFCS Notes"
 description: "Notes and guides for LFCS certification."
 url: "https://dozamo.github.io" # La URL base de tu sitio
 baseurl: "/lfcs" # El subdirectorio de tu proyecto
 
 # --- Selección del Tema ---
-remote_theme: "mmistakes/minimal-mistakes"
+theme: minimal-mistakes-jekyll
 minimal_mistakes_skin: "dark" # Opciones: "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "sunrise", "default"
+
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-include-cache
 
 # --- Navegación Principal (Sidebar) ---
 # Usaremos un archivo de datos para controlar esto
-# (ver Paso 2)
 
 # --- Defaults para todas las páginas ---
 defaults:
