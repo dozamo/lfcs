@@ -1,6 +1,5 @@
 ---
-#layout: default
-layout: collection
+layout: default
 title: Lab Environment Setup
 nav_order: 2
 has_children: true
