@@ -1,20 +1,12 @@
-# _data/navigation.yml
-main_sidebar:
-  - title: "Welcome"
-    url: /
-  - title: "Lab Environment Setup"
-    url: /lab/
-  - title: "Essential Commands"
-    url: /essential-commands/
-  - title: "Users and Groups"
-    url: /users-groups/
-  - title: "Networking"
-    url: /networking/
-  - title: "Storage"
-    url: /storage/
-  - title: "Operations & Deployment"
-    url: /operations-deployment/
-  - title: "Bonus"
-    url: /bonus/
-  - title: "Useful Resources"
-    url: /resources/
+# main links
+main:
+  - title: "Quick-Start Guide"
+    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  # - title: "About"
+  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  # - title: "Sample Posts"
+  #   url: /year-archive/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/
