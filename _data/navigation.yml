@@ -1,38 +1,20 @@
 # _data/navigation.yml
-
-# This defines the sidebar navigation
-docs_sidebar:
-  - title: Getting Started
-    children:
-      - title: Welcome
-        url: /
-      - title: Useful Resources
-        url: /resources/
-
-  - title: Lab Environment Setup
-    children:
-      - title: Provisioning CentOS
-        url: /lab/01-provision-centos/
-      - title: Provisioning Ubuntu
-        url: /lab/02-provision-ubuntu/
-
-  - title: Essential Commands
-    children:
-      # Cuando crees notas en la carpeta _essential_commands, aparecerán aquí
-      # si sobreescribes este archivo con el método que te enseñaré después.
-      # Por ahora, lo dejamos vacío para que el build funcione.
-
-  - title: Users and Groups
-    children:
-
-  - title: Networking
-    children:
-
-  - title: Storage
-    children:
-
-  - title: Operations & Deployment
-    children:
-
-  - title: Bonus
-    children:
+main_sidebar:
+  - title: "Welcome"
+    url: /
+  - title: "Lab Environment Setup"
+    url: /lab/
+  - title: "Essential Commands"
+    url: /essential-commands/
+  - title: "Users and Groups"
+    url: /users-groups/
+  - title: "Networking"
+    url: /networking/
+  - title: "Storage"
+    url: /storage/
+  - title: "Operations & Deployment"
+    url: /operations-deployment/
+  - title: "Bonus"
+    url: /bonus/
+  - title: "Useful Resources"
+    url: /resources/

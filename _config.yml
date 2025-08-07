@@ -1,16 +1,21 @@
-# _config.yml - Final Configuration for a Documentation Site
+# =============================================================================
+# _config.yml - Final Configuration for LFCS Notes
+# Theme: Minimal Mistakes
+# Workflow: GitHub Actions
+# =============================================================================
 
 # --- Basic Site Settings ---
 title: "LFCS Notes"
 description: "A personal study guide for the LFCS certification."
-url: "https://dozamo.github.io"
-baseurl: "/lfcs"
+url: "https://dozamo.github.io"  # The base hostname & protocol for your site
+baseurl: "/lfcs"                 # The subpath of your site, e.g. /blog
 
 # --- Theme and Skin ---
 theme: minimal-mistakes-jekyll
-minimal_mistakes_skin: "dark"
+minimal_mistakes_skin: "dark" # Use "default" for light mode
 
 # --- Plugins ---
+# These are managed by the Gemfile and used by the GitHub Actions workflow.
 plugins:
   - jekyll-feed
   - jekyll-gist
@@ -18,7 +23,10 @@ plugins:
   - jekyll-include-cache
   - jekyll-github-metadata
 
-# --- Collections (This part is correct and we keep it) ---
+# --- Collections ---
+# This is the core of the agile workflow. Each section of your study guide
+# is a collection, corresponding to a folder with a leading underscore.
+# To add a note, you simply add a Markdown file to the appropriate folder.
 collections:
   lab_setup:
     output: true
@@ -43,11 +51,12 @@ collections:
     permalink: /bonus/:path/
 
 # --- Defaults ---
-# This tells every page to use the "single" layout and look for our new sidebar
+# Global front matter settings to apply to all files, keeping them clean.
 defaults:
   - scope:
-      path: ""
+      path: "" # Apply to all files in the project
     values:
-      layout: "single"
+      layout: "single"      # The standard layout for content pages
       sidebar:
-        nav: "docs_sidebar" # We will create this new sidebar definition
+        nav: "main_sidebar" # All pages will use the sidebar defined in _data/navigation.yml
+      show_pagination: true # Enable Previous/Next links for documents within a collection
