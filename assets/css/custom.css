@@ -1,0 +1,33 @@
+/* Estilos para las tarjetas de páginas hijas */
+.child-page-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.child-card {
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.child-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.child-card h3 {
+  margin-top: 0;
+  border-bottom: none;
+}
+
+.child-card h3 a {
+  text-decoration: none;
+}
+
+.child-card p {
+  margin-bottom: 0;
+  color: #ccc;
+}
