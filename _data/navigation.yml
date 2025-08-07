@@ -1,36 +1,30 @@
 # _data/navigation.yml
 
-main:
-  - title: "Welcome"
-    url: /
+docs_sidebar:
+  - title: "Getting Started"
+    children:
+      - title: "Welcome"
+        url: /
+      - title: "Useful Resources"
+        url: /resources/
 
-  # Link to the landing page for the Lab Setup collection
   - title: "Lab Environment Setup"
-    url: /lab/
+    children:
+      # This loop automatically lists all documents in the _lab_setup folder
+      {% for doc in site.lab_setup %}
+        - title: "{{ doc.title }}"
+          url: "{{ doc.url | relative_url }}"
+      {% endfor %}
 
-  # Link to the landing page for the Essential Commands collection
-  - title: "Essential Commands (20%)"
-    url: /essential-commands/
-
-  # Link to the landing page for the Users and Groups collection
-  - title: "Users and Groups (10%)"
-    url: /users-groups/
-
-  # Link to the landing page for the Networking collection
-  - title: "Networking (25%)"
-    url: /networking/
-
-  # Link to the landing page for the Storage collection
-  - title: "Storage (20%)"
-    url: /storage/
-
-  # Link to the landing page for the Operations & Deployment collection
-  - title: "Operations & Deployment (25%)"
-    url: /operations-deployment/
-
-  # Link to the landing page for the Bonus collection
-  - title: "Bonus: Miscellanea"
-    url: /bonus/
-
-  - title: "Useful Resources"
-    url: /resources/
+  - title: "LFCS Exam Domains"
+    children:
+      - title: "Essential Commands (20%)"
+        # url: /essential-commands/ # Optional link for the parent
+      - title: "Users and Groups (10%)"
+        # url: /users-groups/
+      - title: "Networking (25%)"
+        # url: /networking/
+      - title: "Storage (20%)"
+        # url: /storage/
+      - title: "Operations & Deployment (25%)"
+        # url: /operations-deployment/

@@ -3,7 +3,7 @@ title: "Welcome to LFCS Notes"
 permalink: /
 # Ocultamos la barra lateral en la página de inicio para un look más limpio
 #layout: splash
-show_sidebar: false
+#show_sidebar: false
 ---
 # My Personal LFCS Study Guide
 

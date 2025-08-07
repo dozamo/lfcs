@@ -1,4 +1,4 @@
-# _config.yml
+# _config.yml - Final Configuration for a Documentation Site
 
 # --- Basic Site Settings ---
 title: "LFCS Notes"
@@ -18,8 +18,7 @@ plugins:
   - jekyll-include-cache
   - jekyll-github-metadata
 
-# --- Collections ---
-# Defines our content sections. Each one corresponds to a folder.
+# --- Collections (This part is correct and we keep it) ---
 collections:
   lab_setup:
     output: true
@@ -44,12 +43,11 @@ collections:
     permalink: /bonus/:path/
 
 # --- Defaults ---
-# Global settings for all pages to keep things DRY (Don't Repeat Yourself)
+# This tells every page to use the "single" layout and look for our new sidebar
 defaults:
   - scope:
-      path: "" # Apply to all files
+      path: ""
     values:
-      layout: "single" # Use the standard content layout
+      layout: "single"
       sidebar:
-        nav: "main" # All pages will use the main sidebar
-      show_pagination: true # Enable Previous/Next links for collection items
+        nav: "docs_sidebar" # We will create this new sidebar definition
