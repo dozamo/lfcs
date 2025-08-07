@@ -1,7 +1,7 @@
 title: LFCS Notes
 description: Notes and guides for LFCS certification.
 
-remote_theme: just-the-docs/just-the-docs
+remote_theme: just-the-docs/just-the-docs@v0.7.0
 
 color_scheme: dark
 
