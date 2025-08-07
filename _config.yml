@@ -1,6 +1,6 @@
 remote_theme             : "mmistakes/minimal-mistakes@master"
 #theme                    : "minimal-mistakes-jekyll"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" # "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -9,7 +9,7 @@ title_separator          : "-"
 subtitle                 : "Study notes to LFCS"
 name                     : &name "Pascual" # &name is a YAML anchor which can be *referenced later
 description              : &description "A personal study guide for the LFCS certification."
-url                      : https://dozamo.github.io
+url                      : "https://dozamo.github.io"
 baseurl                  : "/lfcs" # the subpath of your site, e.g. "/blog"
 repository               : "dozamo/lfcs"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
