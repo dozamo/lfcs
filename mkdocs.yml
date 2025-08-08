@@ -12,7 +12,7 @@ theme:
     - navigation.tabs
     - navigation.indexes
     - navigation.top
-#    - header.autohide: false
+    - header.autohide: false
     - content.code.copy
     - content.code.annotate
     - content.tabs.link
@@ -68,6 +68,6 @@ extra:
         #    - icon: fontawesome/brands/linkedin
         #      link: https://linkedin.com/in/TU-PERFIL
 
-        #extra_css:
-        #  - stylesheets/extra.css
+extra_css:
+  - stylesheets/extra.css
 

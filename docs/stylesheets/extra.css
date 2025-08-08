@@ -1,0 +1,15 @@
+/* Fija la barra superior (header) */
+i/* 
+.md-header {
+  position: sticky;
+  top: 0;
+  z-index: 1100; /* más alto que el contenido 
+}
+*/
+
+/* Evita que el contenido quede tapado al hacer scroll */
+/*
+.md-main {
+  padding-top: 1rem; /* ajusta según altura de tu header
+}
+*/
