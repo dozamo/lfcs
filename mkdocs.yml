@@ -43,7 +43,7 @@ nav:
       - Networking (25%): lfcs-domains/networking.md
       - Storage (20%): lfcs-domains/storage.md
       - Operations & Deployment (25%): lfcs-domains/operations-deployment.md
-  - Bonus: Miscellanea: misc/index.md
+#  - Bonus: Miscellanea: misc/index.md
   - Useful Resources: resources.md
 
 markdown_extensions:
