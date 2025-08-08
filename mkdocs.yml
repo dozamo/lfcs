@@ -68,6 +68,6 @@ extra:
         #    - icon: fontawesome/brands/linkedin
         #      link: https://linkedin.com/in/TU-PERFIL
 
-extra_css:
-  - stylesheets/extra.css
+        #extra_css:
+        #  - stylesheets/extra.css
 
