@@ -8,9 +8,7 @@ theme:
   name: material
   language: en
   features:
-    - navigation.instant
-    - navigation.indexes
-    - navigation.top
+    - navigation.expand
     - content.code.copy
     - content.code.annotate
     - content.tabs.link
@@ -33,11 +31,10 @@ theme:
     repo: fontawesome/brands/github
 
 nav:
-  - Home: index.md
   - Lab Environment Setup:
-      - Overview: lab-setup/index.md
-      - Provision CentOS VM: lab-setup/kvm-provision-centos.md
-      - Provision Ubuntu VM: lab-setup/kvm-provision-ubuntu.md
+      - Overview: lab-setup/overview.md
+      - Provision CentOS VM: lab-setup/01-provision-centos-kvm.md
+      - Provision Ubuntu VM: lab-setup/02-provision-ubuntu-kvm.md
   - Useful Resources: resources.md
 
 
@@ -63,6 +60,8 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/dozamo
+        #    - icon: fontawesome/brands/linkedin
+        #      link: https://linkedin.com/in/TU-PERFIL
 
 extra_css:
   - stylesheets/extra.css

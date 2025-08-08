@@ -6,11 +6,15 @@ repo_name: dozamo/lfcs
 
 theme:
   name: material
+#  name: mkdocs
   language: en
   features:
+#    - navigation.expand
     - navigation.instant
+#    - navigation.tabs
     - navigation.indexes
     - navigation.top
+#    - header.autohide: false
     - content.code.copy
     - content.code.annotate
     - content.tabs.link
@@ -33,7 +37,7 @@ theme:
     repo: fontawesome/brands/github
 
 nav:
-  - Home: index.md
+  - Welcome: index.md
   - Lab Environment Setup:
       - Overview: lab-setup/index.md
       - Provision CentOS VM: lab-setup/kvm-provision-centos.md
@@ -63,6 +67,8 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/dozamo
+        #    - icon: fontawesome/brands/linkedin
+        #      link: https://linkedin.com/in/TU-PERFIL
 
 extra_css:
   - stylesheets/extra.css

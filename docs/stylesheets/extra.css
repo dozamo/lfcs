@@ -1,15 +1,4 @@
-/* Fija la barra superior (header) */
-i/* 
-.md-header {
-  position: sticky;
-  top: 0;
-  z-index: 1100; /* más alto que el contenido 
+/* Oculta el título raíz de la navegación en la barra lateral */
+.md-nav--primary > .md-nav__title {
+  display: none;
 }
-*/
-
-/* Evita que el contenido quede tapado al hacer scroll */
-/*
-.md-main {
-  padding-top: 1rem; /* ajusta según altura de tu header
-}
-*/
