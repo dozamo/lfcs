@@ -1,17 +1,21 @@
-# .github/workflows/deploy.yml
+# .github/workflows/deploy.yml (Pages > Build and deployment > Source: GitHub Actions)
 name: Deploy MkDocs site to GitHub Pages
 
 on:
-  # Se ejecuta en cada push a la rama 'main'
   push:
     branches:
       - main
-  # Permite ejecutarlo manualmente desde la pestaña Actions en GitHub
   workflow_dispatch:
 
+# Permisos necesarios para que la Action pueda desplegar en GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
-  deploy:
-    name: Deploy site
+  build:
+    name: Build site
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -25,6 +29,26 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Build with MkDocs
+        # Construye el sitio y lo deja en la carpeta 'site'
+        run: mkdocs build
+
+      - name: Upload artifact
+        # Empaqueta la carpeta 'site' para que el job de despliegue la pueda usar
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./site
+
+  deploy:
+    name: Deploy site
+    # El job de despliegue necesita que el de construcción termine con éxito
+    needs: build
+    # Configuración del entorno de despliegue de GitHub Pages
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
       - name: Deploy to GitHub Pages
-        # Este comando mágico construye el sitio y lo empuja a la rama 'gh-pages'
-        run: mkdocs gh-deploy --force
+        id: deployment
+        uses: actions/deploy-pages@v4
