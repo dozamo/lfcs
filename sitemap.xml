@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://dozamo.github.io/lfcs/</loc>
+         <lastmod>2025-08-08</lastmod>
+    </url>
+    <url>
+         <loc>https://dozamo.github.io/lfcs/resources/</loc>
+         <lastmod>2025-08-08</lastmod>
+    </url>
+    <url>
+         <loc>https://dozamo.github.io/lfcs/lab-setup/</loc>
+         <lastmod>2025-08-08</lastmod>
+    </url>
+    <url>
+         <loc>https://dozamo.github.io/lfcs/lab-setup/01-provision-centos-kvm/</loc>
+         <lastmod>2025-08-08</lastmod>
+    </url>
+    <url>
+         <loc>https://dozamo.github.io/lfcs/lab-setup/02-provision-ubuntu-kvm/</loc>
+         <lastmod>2025-08-08</lastmod>
+    </url>
+</urlset>
