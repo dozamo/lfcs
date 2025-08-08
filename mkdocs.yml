@@ -10,6 +10,8 @@ theme:
     - navigation.instant
     - navigation.tabs
     - navigation.indexes
+    - navigation.top
+#    - header.autohide: false
     - content.code.copy
     - content.code.annotate
     - content.tabs.link
@@ -32,19 +34,26 @@ theme:
     repo: fontawesome/brands/github
 
 nav:
+  #  - Welcome: index.md
+  #  - Lab Environment Setup:
+  #      - lab-setup.md
+  #      - Provisioning CentOS Stream 8: _lab_setup/01-kvm-provision-centos.md
+  #      - Provisioning Ubuntu 22.04 LTS: _lab_setup/02-kvm-provision-ubuntu.md
+  #  - LFCS Exam Domains:
+  #      - Essential Commands (20%): lfcs-domains/essential-commands.md
+  #      - Users and Groups (10%): lfcs-domains/users-and-groups.md
+  #      - Networking (25%): lfcs-domains/networking.md
+  #      - Storage (20%): lfcs-domains/storage.md
+  #      - Operations & Deployment (25%): lfcs-domains/operations-deployment.md
+  ##  - Bonus: Miscellanea: misc/index.md
+  #  - Useful Resources: resources.md
   - Welcome: index.md
   - Lab Environment Setup:
-      - lab-setup.md
-      - Provisioning CentOS Stream 8: _lab_setup/01-kvm-provision-centos.md
-      - Provisioning Ubuntu 22.04 LTS: _lab_setup/02-kvm-provision-ubuntu.md
-  - LFCS Exam Domains:
-      - Essential Commands (20%): lfcs-domains/essential-commands.md
-      - Users and Groups (10%): lfcs-domains/users-and-groups.md
-      - Networking (25%): lfcs-domains/networking.md
-      - Storage (20%): lfcs-domains/storage.md
-      - Operations & Deployment (25%): lfcs-domains/operations-deployment.md
-#  - Bonus: Miscellanea: misc/index.md
+      - Overview: lab-setup/index.md
+      - Provision CentOS VM: lab-setup/01-provision-centos-kvm.md
+      - Provision Ubuntu VM: lab-setup/02-provision-ubuntu-kvm.md
   - Useful Resources: resources.md
+
 
 markdown_extensions:
   - admonition
@@ -70,4 +79,7 @@ extra:
       link: https://github.com/dozamo
         #    - icon: fontawesome/brands/linkedin
         #      link: https://linkedin.com/in/TU-PERFIL
+
+extra_css:
+  - stylesheets/extra.css
 
