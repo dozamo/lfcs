@@ -1,3 +1,58 @@
+# ───── MkDocs ─────
+site/
+mkdocs.yml.lock
+
+# ───── Python ─────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.egg-info/
+.eggs/
+*.manifest
+*.spec
+
+# ───── Virtualenv ─────
+.venv/
+venv/
+ENV/
+env/
+
+# ───── Herramientas Python ─────
+.mypy_cache/
+.pytest_cache/
+.dmypy.json
+.pyre/
+.tox/
+
+# ───── IDEs / Editores ─────
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ───── Archivos de sistema ─────
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+# Linux
+*~
+
+# ───── Archivos temporales ─────
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
 # Vim
 *~
 *.sw[p_]
@@ -20,9 +75,6 @@ node_modules
 npm-debug.log*
 package-lock.json
 codekit-config.json
-
-# macOS
-.DS_Store
 
 # Jekyll generated files
 .jekyll-cache
