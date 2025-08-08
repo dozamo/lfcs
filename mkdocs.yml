@@ -1,1 +1,73 @@
-site_name: My Docs
+site_name: LFCS Notes
+site_url: https://dozamo.github.io/lfcs
+repo_url: https://github.com/dozamo/lfcs
+repo_name: dozamo/lfcs
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.indexes
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - search.suggest
+    - search.highlight
+  palette:
+    - scheme: default
+      primary: teal
+      accent: amber
+    - scheme: slate
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    repo: fontawesome/brands/github
+
+nav:
+  - Welcome: index.md
+  - Lab Environment Setup:
+      - lab-setup.md
+      - Provisioning CentOS Stream 8: _lab_setup/01-kvm-provision-centos.md
+      - Provisioning Ubuntu 22.04 LTS: _lab_setup/02-kvm-provision-ubuntu.md
+  - LFCS Exam Domains:
+      - Essential Commands (20%): lfcs-domains/essential-commands.md
+      - Users and Groups (10%): lfcs-domains/users-and-groups.md
+      - Networking (25%): lfcs-domains/networking.md
+      - Storage (20%): lfcs-domains/storage.md
+      - Operations & Deployment (25%): lfcs-domains/operations-deployment.md
+  - Bonus: Miscellanea: misc/index.md
+  - Useful Resources: resources.md
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - tables
+  - abbr
+  - def_list
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/dozamo
+        #    - icon: fontawesome/brands/linkedin
+        #      link: https://linkedin.com/in/TU-PERFIL
+
