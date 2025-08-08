@@ -9,7 +9,7 @@ theme:
   language: en
   features:
     - navigation.sections
-    - navigation.expand
+      #    - navigation.expand
     - navigation.instant
 #    - navigation.tabs
     - navigation.indexes
