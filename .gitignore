@@ -1,88 +1,29 @@
-# ───── MkDocs ─────
-site/
-mkdocs.yml.lock
+# My
+/dz*
+*.v-*
+/*.org
 
-# ───── Python ─────
+# Python cache / MkDocs build
 __pycache__/
 *.py[cod]
-*.pyo
-*.pyd
-*.pkl
 *.egg-info/
-.eggs/
-*.manifest
-*.spec
-
-# ───── Virtualenv ─────
-.venv/
+.env
 venv/
-ENV/
 env/
+.venv/
 
-# ───── Herramientas Python ─────
-.mypy_cache/
-.pytest_cache/
-.dmypy.json
-.pyre/
-.tox/
+# MkDocs build directory
+site/
 
-# ───── IDEs / Editores ─────
+# OS files
+.DS_Store
+Thumbs.db
+
+# VSCode / IDE configs
 .vscode/
 .idea/
-*.sublime-project
-*.sublime-workspace
 
-# ───── Archivos de sistema ─────
-# macOS
-.DS_Store
-.AppleDouble
-.LSOverride
-# Windows
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-$RECYCLE.BIN/
-# Linux
-*~
-
-# ───── Archivos temporales ─────
+# Temporary files
 *.log
 *.tmp
-*.temp
-*.bak
-*.swp
-*.swo
 
-# Vim
-*~
-*.sw[p_]
-
-# IntelliJ IDEA
-*.idea
-
-# Sublime Text
-*.sublime-project
-*.sublime-workspace
-
-# Ruby Gem
-*.gem
-.bundle
-Gemfile.lock
-**/vendor/bundle
-
-# Node.js and NPM
-node_modules
-npm-debug.log*
-package-lock.json
-codekit-config.json
-
-# Jekyll generated files
-.jekyll-cache
-.jekyll-metadata
-.sass-cache
-_asset_bundler_cache
-_site
-
-# 
-/*.org
-/dz_drafts
