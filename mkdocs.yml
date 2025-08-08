@@ -8,13 +8,13 @@ theme:
   name: material
   language: en
   features:
+    - navigation.sections
+    - navigation.expand
     - navigation.instant
 #    - navigation.tabs
     - navigation.indexes
 #    - navigation.top
 #    - header.autohide: false
-#    - navigation.sections
-#    - navigation.expand
     - content.code.copy
     - content.code.annotate
     - content.tabs.link
