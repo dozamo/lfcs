@@ -9,10 +9,12 @@ theme:
   language: en
   features:
     - navigation.instant
-    - navigation.tabs
+#    - navigation.tabs
     - navigation.indexes
-    - navigation.top
-    - header.autohide: false
+#    - navigation.top
+#    - header.autohide: false
+#    - navigation.sections
+#    - navigation.expand
     - content.code.copy
     - content.code.annotate
     - content.tabs.link
