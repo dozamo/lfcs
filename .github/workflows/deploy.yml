@@ -1,0 +1,30 @@
+# .github/workflows/deploy.yml
+name: Deploy MkDocs site to GitHub Pages
+
+on:
+  # Se ejecuta en cada push a la rama 'main'
+  push:
+    branches:
+      - main
+  # Permite ejecutarlo manualmente desde la pestaña Actions en GitHub
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Deploy site
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Deploy to GitHub Pages
+        # Este comando mágico construye el sitio y lo empuja a la rama 'gh-pages'
+        run: mkdocs gh-deploy --force
